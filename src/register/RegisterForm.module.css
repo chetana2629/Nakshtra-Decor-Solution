@@ -1,0 +1,147 @@
+/* Enhanced styles for a modern and attractive layout */
+
+:root {
+    --primary-color: #6e45e2;
+    --secondary-color: #88d3ce;
+    --background-color: #f9f9f9;
+    --border-color: #ddd;
+    --focus-color: #6e45e2;
+    --error-color: #d9534f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px; /* Adjust width for two-column layout */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.subTitle {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Gap between columns */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 0.5rem; /* Space between input fields */
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 0.5rem 2rem; /* Padding for icon space and text */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.inputBox input:focus,
+.inputBox select:focus {
+    border-color: var(--focus-color);
+    outline: none;
+}
+
+.inputBox .icon {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #888;
+}
+
+.inputBox select {
+    padding-right: 2.5rem; /* Space for icon */
+}
+
+.errorMessage {
+    color: var(--error-color);
+    font-size: 0.875rem; /* Adjust font size */
+    margin-top: 0.25rem; /* Space above the error message */
+    display: none;
+}
+
+.errorMessage.visible {
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registerLink {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.registerLink p {
+    margin: 0;
+    color: #666;
+}
+
+.registerLink a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,58 @@
+/* src/components/DesignerPage.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.details h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.actionBtn:hover {
+    background-color: #0056b3;
+}
+
+.actionBtn svg {
+    margin-right: 10px;
+}

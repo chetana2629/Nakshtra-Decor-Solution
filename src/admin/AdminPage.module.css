@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1a9bdb, hsl(202, 15%, 85%)); /* Modern gradient background */
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Profile Section Styling */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #ffffff; /* White background for profile card */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar Styling */
+.avatar {
+    margin-right: 2rem;
+    border: 4px solid #6e45e2; /* Thicker border */
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Details Styling */
+.details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Actions Section Styling */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Action Buttons Styling */
+.actionBtn {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #6e45e2, #f5f9f9); /* Gradient background for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.actionBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay effect */
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    border-radius: 50%;
+}
+
+.actionBtn:hover::before {
+    transform: translateX(0);
+}
+
+.actionBtn:hover {
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.actionBtn svg {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .details h1 {
+        font-size: 2rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
+
+    .actions {
+        max-width: 100%;
+    }
+
+    /* src/styles/AdminPage.module.css */
+.container {
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.details h1 {
+    margin: 0;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actionBtn {
+    margin-right: 10px;
+}
+
+}

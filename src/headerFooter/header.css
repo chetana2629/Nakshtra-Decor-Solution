@@ -1,0 +1,83 @@
+/* header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Text color for contrast */
+  border-bottom: 1px solid #ddd; /* Optional border for visual separation */
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Text color */
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.header-text p {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Text color */
+}
+
+.header-pages {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-pages ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-pages li {
+  margin: 0;
+}
+
+.header-pages a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  font-size: 16px;
+}
+
+.header-pages a:hover {
+  text-decoration: underline;
+  color: #007bff; /* Hover color */
+}
+
+.header-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-login .login-button {
+  text-decoration: none;
+  color: #ffffff; /* Button text color */
+  padding: 10px 15px;
+  background-color: #007bff; /* Button background color */
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.header-login .login-button:hover {
+  background: linear-gradient(135deg, #4caf50, #6ed083); /* Hover background gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
